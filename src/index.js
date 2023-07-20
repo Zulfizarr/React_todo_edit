@@ -1,14 +1,12 @@
-import { StrictMode } from "react";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-const root = ReactDOM.createRoot(document.getElementById("root"))
-let count=0
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <StrictMode>
-        <App count ={count}/>
-        
-    </StrictMode>
-   
-   
-)
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
